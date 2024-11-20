@@ -5,23 +5,34 @@ body {
   }
   
   /* Hero Section */
+  
   .hero {
-    background: linear-gradient(45deg, #e348ba, #f09dde);
-    padding: 100px 0;
+    background-image: url('assets/background-image.jpg'); /* Background image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    padding: 120px 0; /* Adjust padding for better spacing */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
   }
   
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .hero p {
-    font-size: 1.25rem;
+  .hero h1, .hero p {
+    font-size: 2rem; /* Font size for title and paragraph */
+    text-align: center;
   }
   
   .hero .btn {
-    border-radius: 50px;
+    margin: 0 10px; /* Adds some margin between buttons */
   }
+  
+  @media (max-width: 767px) {
+    .hero h1 {
+      font-size: 1.5rem; /* Smaller text on mobile */
+    }
+    .hero p {
+      font-size: 1rem; /* Smaller text on mobile */
+    }
+  }
+  
   
   /* Projects Section */
   .projects .card {
@@ -70,7 +81,7 @@ body {
   }
   
   .project-description h2 {
-    color: #007bff; /* Couleur bleue pour le titre */
+    color: #ff00ff; /* Couleur bleue pour le titre */
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -80,4 +91,214 @@ body {
     padding-left: 40px;
   }
   
-    
+  #btn-violet {
+    background-color: violet; /* Violet background */
+    border-color: violet;    /* Violet border */
+    color: white;            /* White text */
+    margin-right: 10px;
+  }
+  
+  
+  #primary{
+    background-color: violet; /* Violet background */
+    border-color: violet;    /* Violet border */
+    color: white;
+  }
+  #btn-description{
+    background-color: violet; /* Violet background */
+    border-color: violet;    /* Violet border */
+    color: white;
+  }
+  #btn-violet:hover {
+    background-color: darkviolet; /* Darker violet for hover */
+    border-color: darkviolet;
+  }
+  #about {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    color:#cb42a2 ;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #about button {
+    border-radius: 25px;
+  }
+  #contact {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    color: #f7f4f6;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+/* Skills Section */
+#skills-education {
+  background: linear-gradient(145deg, #6a0dad, #8a2be2); /* Dégradé violet */
+  color: white;
+  padding: 50px 0;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond translucide */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Zoom au survol */
+}
+
+.skill-card i {
+  color: white;
+}
+
+.timeline h3, .timeline p {
+  color: white;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+/* Education Section */
+.timeline {
+  border-left: 3px solid white;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #8a2be2;
+}
+#contact {
+  padding: 50px 0;
+  color: white;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+}
+
+.contact-item {
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.contact-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-item i {
+  color: #ffddff;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+.card {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: #ffddff; /* Texte cliquable avec couleur douce */
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline; /* Souligné au survol */
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-body {
+  padding: 30px;
+  border-radius: 10px;
+}
+#btn-cinema{
+  background-color: violet; /* Violet background */
+    border-color: violet;    /* Violet border */
+    color: white;
+}
