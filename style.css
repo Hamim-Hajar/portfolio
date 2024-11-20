@@ -61,4 +61,23 @@ body {
     object-fit: cover; /* Découpe l'image si elle est trop grande */
     border-radius: 5px 5px 0 0; /* Coins arrondis pour plus de style */
   }
+  .project-description {
+    background-color: #f9f9f9; /* Couleur de fond claire */
+    color: #333; /* Couleur du texte */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-description h2 {
+    color: #007bff; /* Couleur bleue pour le titre */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-description ul {
+    list-style-type: disc;
+    padding-left: 40px;
+  }
+  
     
