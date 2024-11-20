@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(45deg, #e348ba, #f09dde);
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  .hero .btn {
+    border-radius: 50px;
+  }
+  
+  /* Projects Section */
+  .projects .card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  
+  .projects .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .projects .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+  }
+/* Style des cartes de projet */
+.projects .card {
+    border: none;
+    transition: transform 0.2s;
+    height: 100%; /* Permet aux cartes d’avoir une hauteur uniforme */
+  }
+  
+  .projects .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Limiter les dimensions des images */
+  .projects .card img {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: 200px; /* Hauteur uniforme pour toutes les images */
+    object-fit: cover; /* Découpe l'image si elle est trop grande */
+    border-radius: 5px 5px 0 0; /* Coins arrondis pour plus de style */
+  }
+    
